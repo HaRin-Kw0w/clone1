@@ -21,7 +21,7 @@ body{
 	font-family: "Rodoto", "Noto Sans KR", sans-serif;
 }
 
-header{
+#header{
 	display: flex;
 	justify-content:space-between;
 	align-items: center;
@@ -30,11 +30,11 @@ header{
 	height: 120px;
 	background-color: #fff;
 }
-header >.icon{
+#header >.icon{
 	display: flex;
 	gap: 20px;
 }
-header >.icon ul{
+#header >.icon ul{
 	display: flex;
 	gap: 6px;
 }
@@ -70,18 +70,18 @@ header >.icon ul{
 	display: none;
 }
 
-nav{
+#nav{
 	position: relative;
 	z-index: 1000; 
 	height: 60px;
 }
 
-nav > ul {
+#nav > ul {
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
-
+	
 	display: flex;
 	justify-content: center;
 	height: 60px;
@@ -89,10 +89,10 @@ nav > ul {
 	background-color: #fff;
 	transition: height 0.3s;;
 }
-nav > ul:hover {
+#nav > ul:hover {
 	height: 200px; 
 }
-nav > ul::after{ 
+#nav > ul::after{ 
 	content: "";
 	position: absolute;
 	left: 0;
@@ -103,7 +103,7 @@ nav > ul::after{
 }
 
 
-nav > ul >li>a{
+#nav > ul >li>a{
 	display: block;
 	position: relative;
 	padding: 0 50px;
@@ -111,28 +111,28 @@ nav > ul >li>a{
 	font-size: 18px;
 	color: #2f2f2f;
 }
-nav > ul > li:hover > a { 
+#nav > ul > li:hover > a { 
 	color: #b4252d;
 }
 
 
-nav li ul{
+#nav li ul{
 	padding-top: 10px;
 	padding-left: 40px;
 }
-nav li ul a {
+#nav li ul a {
 	line-height: 24px;
 	text-align: left;
 	color: #a1a09e;
 }
-nav .sub a {
+#nav .sub a {
 	display: block;
 	padding: 6px 0 7px;
 	line-height: 1;
 	font-size: 14px;
 	color: #aaa;
 }
-nav .sub a:hover {
+#nav .sub a:hover {
 	text-decoration: underline;
 	color: #000;
 }
@@ -142,6 +142,7 @@ nav .sub a:hover {
 .slider{
 	position: relative;
 	height: 420px;
+	min-width: 1020px;
 }
 .slider img{
 	display: block;
@@ -162,7 +163,7 @@ nav .sub a:hover {
 	transform: translate(0,-50%);
 }
 
-section{
+#section{
 	margin: 0 auto;
 	padding: 70px 0 60px;
 	width: 1020px;
@@ -503,7 +504,9 @@ section{
 	background-color: #fff;
 	color: #000;
 }
-footer{
+
+#footer{
+	min-width: 1020px;
 	padding: 50px 0;
 	background-color: #333;
 }
