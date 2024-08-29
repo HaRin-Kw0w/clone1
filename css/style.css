@@ -81,6 +81,7 @@ body{
 	left: 0;
 	top: 0;
 	width: 100%;
+	min-width: 1020px;
 	
 	display: flex;
 	justify-content: center;
@@ -561,16 +562,15 @@ body{
 }
 
 .skip_nav a{
-	position: fixed; /*자동으로 position: block; 바뀝니다*/
+	position: fixed; 
 	left: 0;
-	top: -9999px; /*위로 멀리 사라지게 처리*/
-	/*top: 0;*/
+	top: -9999px; 
 	z-index: 9999;
-	width: 100%; /*absolute, flxed는 block 이라도 가로 크기를 갖지 못함*/
-	line-height: 40px; /*정확한 세로 부피를 만듦*/
-	text-align: center; /*일반적인 스킵 내비게이션은 중앙에 정렬*/
+	width: 100%; 
+	line-height: 40px; 
+	text-align: center; 
 	font-size: 0.875em;
-	background-color: #385170; /*주조 첫번째 색을 일반적으로 사용*/
+	background-color: #385170; 
 	color: #fff;
 }
 .skip_nav a:focus {
